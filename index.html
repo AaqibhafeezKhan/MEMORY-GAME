@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Memory Game</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header>
+    <h1>Memory Game</h1>
+    <div class="controls">
+      <label for="difficulty">Difficulty:</label>
+      <select id="difficulty">
+        <option value="easy">Easy (8 pairs)</option>
+        <option value="medium">Medium (12 pairs)</option>
+        <option value="hard">Hard (16 pairs)</option>
+      </select>
+      <button id="startButton">Start Game</button>
+      <button id="hintButton">Hint</button>
+    </div>
+    <div class="score-timer">
+      <span id="score">Score: 0</span>
+      <span id="timer">Time: 0s</span>
+    </div>
+  </header>
+  <main>
+    <section class="game-container" id="gameContainer">
+    </section>
+  </main>
+
+  <audio id="flipSound" src="sounds/flip.mp3"></audio>
+  <audio id="matchSound" src="sounds/match.mp3"></audio>
+  <audio id="nomatchSound" src="sounds/nomatch.mp3"></audio>
+
+  <script src="script.js"></script>
+</body>
+</html>
